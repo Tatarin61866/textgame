@@ -17,7 +17,7 @@ age = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Вас зовут {name} и вам {++age} год.");
 */
 
-float health = 100;
+float health = 200;
 int levelHero = 1;
 int armor = 50;
 int armorEnemy = 50;

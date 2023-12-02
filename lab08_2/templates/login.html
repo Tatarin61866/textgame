@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_nemilov lab08</title>
+	</head>
+	<body>
+		<h2>Please log in</h2>
+		<img src="{{ url_for('static', filename='icon4.png') }}" height="64">
+		<form action="{{ url_for('login') }}", method="POST">
+			<input type="password" name="password" placeholder="Password"><br>
+			<input type="submit" value="Log in">
+		</form>
+	</body>
+</html>

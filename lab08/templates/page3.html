@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_nemilov lab08</title>
+	</head>
+	<body>
+		<a href="{{ url_for('index')}}">go to original page</a>
+		<a href="{{ url_for('page2')}}">go to another page</a>
+		<a href="{{ url_for('page5')}}">go to extensible page</a>
+		<a href="{{ url_for('send')}}">send message</a><br>
+		<h2>Another page</h2>
+		{% block content %}
+		<img src="{{ url_for('static', filename='icon2.png')}}" height="32">
+		another content
+		{% endblock %}
+	</body>
+</html>

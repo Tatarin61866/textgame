@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_nemilov lab04</title>
+	</head>
+	<body>
+		<h1>Checkboxes</h1>
+		<hr>
+		<form action="/checkboxes" method="get">
+			<input type="checkbox" name="red" checked>Red<br>
+			<input type="checkbox" name="green">Green<br>
+			<input type="checkbox" name="blue">Blue<br>
+			
+			<input type="reset" name="reset">
+			<input type="submit" name="submit">
+		</form>
+		<form action="/radiobuttons_and_lists" method="get">
+			<input type="radio" name="oper" value="red">Red<br>
+			<input type="radio" name="oper" value="green">Green<br>
+			<input type="radio" name="oper" value="blue">Blue<br>
+			
+			<input type="reset" name="reset">
+			<input type="submit" name="submit">
+		</form>
+	</body>
+</html>

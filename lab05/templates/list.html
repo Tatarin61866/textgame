@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>g12_nemilov lab05</title>
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <hr>
+        <form method="get" action="/list">
+            Task:
+            <input type="text" name="the_task">
+            <select name="color">
+                <option value="#800">Red</option>
+                <option value="#080">Green</option>
+                <option value="#008">Blue</option>
+                <option value="#808">Violet</option>
+            </select>
+            <input type="submit" value="add">
+        </form>
+        <form method="get" action="/list">
+            Task index:
+            <input type="text" name="task_delete_index">
+            <input type="submit" value="delete">
+        </form>
+        <hr>
+        <ol>
+            {% for i in range(len) %}
+            <li><font color="{{task_colors[i]}}">{{ tasks[i] }}</font> <a href="/list?task_delete_index={{i + 1}}">Delete</a></li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>

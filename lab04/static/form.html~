@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_nemilov lab03</title>
+	</head>
+	<body>
+		<h1>Form using GET method</h1>
+		<hr>
+		<form method="get" name="formname">
+			Plese, enter your name:
+			<input type="text" name="text">
+			<input type="submit" name="send">
+		</form>
+	</body>
+</html>

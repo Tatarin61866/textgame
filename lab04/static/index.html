@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_nemilov lab04</title>
+	</head>
+	<body>
+		<h1>Checkboxes</h1>
+		<table cellspacing="15">
+			<tr>
+				<td>
+					<b>Get</b>
+					<form action="/checkboxes" method="get">
+						<input type="checkbox" name="red">Red<br>
+						<input type="checkbox" name="green">Green<br>
+						<input type="checkbox" name="blue">Blue<br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+				<td>
+					<b>Post</b><br>
+					<form action="/checkboxes" method="post">
+						<input type="checkbox" name="red">Red<br>
+						<input type="checkbox" name="green">Green<br>
+						<input type="checkbox" name="blue">Blue<br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		<h1>Radio</h1>
+		<table cellspacing="15">
+			<tr>
+				<td>
+					<b>Get</b>
+					<form action="/radiobuttons_and_lists" method="get">
+						<input type="hidden" name="description" value="Radiobuttons">
+						First color:<br>
+						<input type="radio" name="box" value="red">Red<br>
+						<input type="radio" name="box" value="green">Green<br>
+						<input type="radio" name="box" value="blue">Blue<br>
+						Second color:<br>
+						<input type="radio" name="box2" value="red">Red<br>
+						<input type="radio" name="box2" value="green">Green<br>
+						<input type="radio" name="box2" value="blue">Blue<br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+				<td>
+					<b>Post</b><br>
+					<form action="/radiobuttons_and_lists" method="post">
+						<input type="hidden" name="description" value="Radiobuttons">
+						First color:<br>
+						<input type="radio" name="box" value="red">Red<br>
+						<input type="radio" name="box" value="green">Green<br>
+						<input type="radio" name="box" value="blue">Blue<br>
+						Second color:<br>
+						<input type="radio" name="box2" value="red">Red<br>
+						<input type="radio" name="box2" value="green">Green<br>
+						<input type="radio" name="box2" value="blue">Blue<br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<h1>List</h1>
+		<table cellspacing="15">
+			<tr>
+				<td>
+					<b>Get</b>
+					<form action="/radiobuttons_and_lists" method="get">
+						<input type="hidden" name="description" value="List">
+						First color:<br>
+						<select name ="box">
+							<option></option>
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+						</select><br>
+						Second color:<br>
+						<select name ="box2">
+							<option></option>
+							<option value="red">Red</option>
+							<option value="red2">Red</option>
+							<option value="green">Green</option>
+							<option value="green2">Green</option>
+							<option value="blue">Blue</option>
+							<option value="blue2">Blue</option>
+						</select><br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+				<td>
+					<b>Post</b><br>
+					<form action="/radiobuttons_and_lists" method="post">
+						<input type="hidden" name="description" value="List">
+						First color:<br>
+						<select name ="box">
+							<option></option>
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+						</select><br>
+						Second color:<br>
+						<select name ="box2">
+							<option></option>
+							<option value="red">Red</option>
+							<option value="red2">Red</option>
+							<option value="green">Green</option>
+							<option value="green2">Green</option>
+							<option value="blue">Blue</option>
+							<option value="blue2">Blue</option>
+						</select><br>
+						
+						<input type="reset" name="reset">
+						<input type="submit" name="submit">
+					</form>
+				</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

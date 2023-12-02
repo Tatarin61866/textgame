@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+		{% block content %}
+		<h2>Send message</h2>
+		<table class="table table-striped table-light table-bordered">
+			<thead class="">
+				<tr>
+					<td>Login</td>
+					<td>Email</td>
+					<td>Password</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for user in users %}
+				<tr>
+					<td>{{user[0]}}</td>
+					<td>{{user[1]}}</td>
+					<td>{{user[2]}}</td>
+					
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		{% endblock %}

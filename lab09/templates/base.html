@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>g12_nemilov lab09</title>
+		<link rel="stylesheet" href="../static/bootstrap/bootstrap.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a id="page1" href="{{url_for('page1')}}" class="nav-link">Page 1</a>
+					</li>
+					<li class="nav-item">
+						<a id="page2" href="{{url_for('page2')}}" class="nav-link">Page 2</a>
+					</li>
+					<li class="nav-item">
+						<a id="page3" href="{{url_for('page3')}}" class="nav-link">Page 3</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		{% block content %}
+		content
+		{% endblock %}
+		<script src=".//static/bootstrap/jquery.js"></script>
+		<script src="../static/bootstrap/bootstrap.js"></script>
+		<script>
+			$(document).ready(function () {
+			$("#{{request.endpoint}}").parent().addClass("active"); })
+		</script>
+		
+	</body>
+</html>
